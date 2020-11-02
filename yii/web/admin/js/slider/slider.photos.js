@@ -12,16 +12,16 @@ app.controller('controller', ["$http", "$scope", "$sce", function($http, $scope)
 
   $scope.reInit = function() {
     $http({
-      url: '/Xhiddenimstadminurlx/mainphoto/rest-sort',
+      url: '/Xhiddenimstadminurlx/slider/rest-sort',
       method: "GET",
       headers: {
         'Cache-Control': 'no-cache'
       },
       params: {
-        mainphoto_id: $scope.id
+        slider_id: $scope.id
       },
     }).success(function(data) {
-      $scope.mainphoto = data.mainphoto;
+      $scope.slider = data.slider;
     });
   }
   $scope.reInit();
@@ -30,10 +30,10 @@ app.controller('controller', ["$http", "$scope", "$sce", function($http, $scope)
     var senddata = {
       id: id,
       _csrf: yii.getCsrfToken(),
-      mainphoto_id: $scope.id
+      slider_id: $scope.id
     };
     $http({
-      url: '/Xhiddenimstadminurlx/mainphoto/delete',
+      url: '/Xhiddenimstadminurlx/slider/delete',
         method: "POST",
         headers: {
           'Cache-Control': 'no-cache',
@@ -57,7 +57,7 @@ app.controller('controller', ["$http", "$scope", "$sce", function($http, $scope)
           _crf: yii.getCsrfToken()
       };
       $http({
-          url: '/Xhiddenimstadminurlx/mainphoto/update',
+          url: '/Xhiddenimstadminurlx/slider/update',
           method : "GET",
           params: {
             redirect: id

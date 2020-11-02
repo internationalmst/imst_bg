@@ -5,18 +5,18 @@ use yii\helpers\Url;
 AppAsset::register($this);
 ?>
     <!-- ======= Top Bar ======= -->
-    <div id="topbar" class="d-none d-lg-flex align-items-center fixed-top">
+    <div id="topbar" class="d-none d-lg-flex align-items-center ">
     <div class="container d-flex align-items-center">
       <div class="d-flex align-items-center">
-        <i class="icofont-envelope"></i>Email: csavvas@imast.gr
+        <i class="icofont-envelope"></i>Email: imst@imst.gr
       </div>
     </div>
   </div>
 
   <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top">
+  <header id="header" class="">
     <div class="container d-flex align-items-center">
-      <a href="<?=Url::base(true)?>" class="logo mr-auto">Imst Logo<!-- <img src="assets/img/logo.png" alt=""> --></a>
+      <a href="<?=Url::base(true)?>" class="logo mr-auto"><img style="width:300px;" src="images/LOGO_Team_Name.png" alt=""></a>
       <nav class="nav-menu d-none d-lg-block">
         <ul>
         <?php if($lang == 'en'):?>

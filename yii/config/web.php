@@ -36,7 +36,7 @@ $config = [
             // send all mails to a file by default. You have to set
             // 'useFileTransport' to false and configure a transport
             // for the mailer to send real emails.
-            'useFileTransport' => true,
+            'useFileTransport' => false,
         ],
         'log' => [
             'traceLevel' => YII_DEBUG ? 3 : 0,
@@ -65,6 +65,11 @@ $config = [
                 ['pattern' => 'Xhiddenimstadminurlx/login', 'route' => '/xhiddenimstadminurlx/admin/login', 'normalizer' => ['collapseSlashes' => false]],
                 ['pattern' => 'Xhiddenimstadminurlx/logout', 'route' => '/xhiddenimstadminurlx/admin/logout', 'normalizer' => ['collapseSlashes' => false]],
 
+                ['pattern' => 'Xhiddenimstadminurlx/slider/index', 'route' => '/xhiddenimstadminurlx/slider/index', 'normalizer' => ['collapseSlashes' => false]],
+                ['pattern' => 'Xhiddenimstadminurlx/slider/rest-sort', 'route' => '/xhiddenimstadminurlx/slider/rest-sort', 'normalizer' => ['collapseSlashes' => false]],
+                ['pattern' => 'Xhiddenimstadminurlx/slider/upload-photo', 'route' => '/xhiddenimstadminurlx/slider/upload-photo', 'normalizer' => ['collapseSlashes' => false]],
+                ['pattern' => 'Xhiddenimstadminurlx/slider/delete', 'route' => '/xhiddenimstadminurlx/slider/delete', 'normalizer' => ['collapseSlashes' => false]],
+
                 ['pattern' => 'Xhiddenimstadminurlx/mainphoto/index', 'route' => '/xhiddenimstadminurlx/mainphoto/index', 'normalizer' => ['collapseSlashes' => false]],
                 ['pattern' => 'Xhiddenimstadminurlx/mainphoto/upload-photo', 'route' => '/xhiddenimstadminurlx/mainphoto/upload-photo', 'normalizer' => ['collapseSlashes' => false]],
                 ['pattern' => 'Xhiddenimstadminurlx/mainphoto/rest-sort', 'route' => '/xhiddenimstadminurlx/mainphoto/rest-sort', 'normalizer' => ['collapseSlashes' => false]],
@@ -75,6 +80,7 @@ $config = [
                 ['pattern' => 'Xhiddenimstadminurlx/texts/values-update', 'route' => '/xhiddenimstadminurlx/texts/values-update', 'normalizer' => ['collapseSlashes' => false]],
                 ['pattern' => 'Xhiddenimstadminurlx/texts/mission-update', 'route' => '/xhiddenimstadminurlx/texts/mission-update', 'normalizer' => ['collapseSlashes' => false]],
                 ['pattern' => 'Xhiddenimstadminurlx/texts/guarantee-update', 'route' => '/xhiddenimstadminurlx/texts/guarantee-update', 'normalizer' => ['collapseSlashes' => false]],
+                ['pattern' => 'Xhiddenimstadminurlx/texts/work-with-us-update', 'route' => '/xhiddenimstadminurlx/texts/work-with-us-update', 'normalizer' => ['collapseSlashes' => false]],
 
                 ['pattern' => 'Xhiddenimstadminurlx/texts/services-text-one', 'route' => '/xhiddenimstadminurlx/texts/services-text-one', 'normalizer' => ['collapseSlashes' => false]],
                 ['pattern' => 'Xhiddenimstadminurlx/texts/services-text-two', 'route' => '/xhiddenimstadminurlx/texts/services-text-two', 'normalizer' => ['collapseSlashes' => false]],
@@ -90,7 +96,7 @@ $config = [
                 ['pattern' => 'Xhiddenimstadminurlx/texts/guarantee-text-five', 'route' => '/xhiddenimstadminurlx/texts/guarantee-text-five', 'normalizer' => ['collapseSlashes' => false]],
                 ['pattern' => 'Xhiddenimstadminurlx/texts/guarantee-text-six', 'route' => '/xhiddenimstadminurlx/texts/guarantee-text-six', 'normalizer' => ['collapseSlashes' => false]],
                 ['pattern' => 'Xhiddenimstadminurlx/texts/guarantee-text-seven', 'route' => '/xhiddenimstadminurlx/texts/guarantee-text-seven', 'normalizer' => ['collapseSlashes' => false]],
-                ['pattern' => 'Xhiddenimstadminurlx/texts/guarantee-text-eight', 'route' => '/xhiddenimstadminurlx/texts/guarantee-text-eight', 'normalizer' => ['collapseSlashes' => false]],
+                ['pattern' => 'Xhiddenimstadminurlx/texts/guarantee-text-nine', 'route' => '/xhiddenimstadminurlx/texts/guarantee-text-nine', 'normalizer' => ['collapseSlashes' => false]],
 
                 ['pattern' => 'Xhiddenimstadminurlx/newsletter/index', 'route' => '/xhiddenimstadminurlx/newsletter/index', 'normalizer' => ['collapseSlashes' => false]],
                 ['pattern' => 'Xhiddenimstadminurlx/newsletter/delete', 'route' => '/xhiddenimstadminurlx/newsletter/delete', 'normalizer' => ['collapseSlashes' => false]],

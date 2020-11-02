@@ -19,6 +19,7 @@ use app\models\CvForm;
 use app\models\db\Languages;
 use yii\web\NotFoundHttpException;
 use app\helpers\ChangeLanguage;
+use app\models\db\Slider;
 use yii\web\View;
 
 class SiteController extends Controller
@@ -106,10 +107,10 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        $main_photo = MainPhoto::find()->one();
         $texts = Texts::find()->all();
         $guarantees = Guarantees::find()->all();
         $services = Services::find()->all();
+        $slider = Slider::find()->orderBy(['position' => SORT_ASC])->all();
 
         $newsletter = new NewsletterForm();
 
@@ -120,17 +121,19 @@ class SiteController extends Controller
         }
 
         return $this->render('index', [
-            'main_photo' => $main_photo,
             'texts' => $texts,
             'guarantees' => $guarantees,
             'services' => $services,
             'lang' => $this->view->params['language'],
+            'slider' => $slider,
             'model' => $newsletter
         ]);
     }
     public function actionWork()
     {
         $main_photo = MainPhoto::find()->one();
+        $slider = Slider::find()->orderBy(['position' => SORT_ASC])->all();
+        $texts = Texts::find()->all();
 
         $cv = new CvForm();
 
@@ -141,8 +144,9 @@ class SiteController extends Controller
         }
 
         return $this->render('work', [
-            'main_photo' => $main_photo,
+            'texts' => $texts,
             'lang' => $this->view->params['language'],
+            'slider' => $slider,
             'model' => $cv
         ]);
     }

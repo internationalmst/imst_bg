@@ -57,7 +57,7 @@ class AdminController extends Controller
         }
         $model = new LoginForm();
         if ($model->load(Yii::$app->request->post()) && $model->login()) {
-            $this->redirect('mainphoto/index');
+            $this->redirect('slider/index');
         }
 
         return $this->render('/admin/login', [

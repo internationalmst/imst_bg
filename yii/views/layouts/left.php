@@ -5,17 +5,20 @@
             [
                 'options' => ['class' => 'sidebar-menu tree', 'data-widget'=> 'tree'],
                 'items' => [
-                    ['label' => 'Main Photo', 'icon' => 'circle', 'url' => ['/Xhiddenimstadminurlx/mainphoto/index']],
+                    ['label' => 'Slider', 'icon' => 'circle', 'url' => ['/Xhiddenimstadminurlx/slider/index']],/* 
+                    ['label' => 'Main Photo', 'icon' => 'circle', 'url' => ['/Xhiddenimstadminurlx/mainphoto/index']],*/
                     [
                         'label' => 'Texts',
                         'icon' => 'circle',
                         'url' => '#',
                         'items' => [
-                            ['label' => 'Main Photo', 'icon' => 'circle', 'url' => ['/Xhiddenimstadminurlx/texts/mainphoto']],
+                            ['label' => 'Slider Text', 'icon' => 'circle', 'url' => ['/Xhiddenimstadminurlx/texts/mainphoto']],
+                            /* ['label' => 'Main Photo', 'icon' => 'circle', 'url' => ['/Xhiddenimstadminurlx/texts/mainphoto']], */
                             ['label' => 'Company', 'icon' => 'circle', 'url' => ['/Xhiddenimstadminurlx/texts/company-update']],
                             ['label' => 'Values', 'icon' => 'circle', 'url' => ['/Xhiddenimstadminurlx/texts/values-update']],
                             ['label' => 'Mission', 'icon' => 'circle', 'url' => ['/Xhiddenimstadminurlx/texts/mission-update']],
-                            ['label' => 'Guarantee', 'icon' => 'circle', 'url' => ['/Xhiddenimstadminurlx/texts/guarantee-update']],/*
+                            ['label' => 'Guarantee', 'icon' => 'circle', 'url' => ['/Xhiddenimstadminurlx/texts/guarantee-update']],
+                            ['label' => 'Work With Us', 'icon' => 'circle', 'url' => ['/Xhiddenimstadminurlx/texts/work-with-us-update']],/*
                             ['label' => 'Services', 'icon' => 'circle', 'url' => ['/Xhiddenimstadminurlx/texts/services-update']], 
                             ['label' => 'Contact', 'icon' => 'circle', 'url' => ['/Xhiddenimstadminurlx/texts/contact-update']], */
                         ],
@@ -46,6 +49,7 @@
                             ['label' => 'Text #6', 'icon' => 'circle', 'url' => ['/Xhiddenimstadminurlx/texts/guarantee-text-six']],
                             ['label' => 'Text #7', 'icon' => 'circle', 'url' => ['/Xhiddenimstadminurlx/texts/guarantee-text-seven']],
                             ['label' => 'Text #8', 'icon' => 'circle', 'url' => ['/Xhiddenimstadminurlx/texts/guarantee-text-eight']],
+                            ['label' => 'Text #9', 'icon' => 'circle', 'url' => ['/Xhiddenimstadminurlx/texts/guarantee-text-nine']],
                         ],
                     ],
                     ['label' => 'Newsletter Users', 'icon' => 'circle', 'url' => ['/Xhiddenimstadminurlx/newsletter/index']],

@@ -89,6 +89,24 @@ class TextsController extends Controller
         ]);
     }
 
+    public function actionWorkWithUsUpdate()
+    {
+        $text = Texts::find()->where(['id' => '6'])->one();
+
+        if (Yii::$app->request->post()) {
+            
+            $model = $this->findTextModel(Yii::$app->request->post()['Texts']);
+            
+            if($model->save()) {
+                $this->redirect('/Xhiddenimstadminurlx/texts/work-with-us-update');
+            }
+        }
+
+        return $this->render('/admin/texts', [
+            'model' => $text,
+        ]);
+    }
+
     public function actionCompanyUpdate()
     {
         $text = Texts::find()->where(['id' => '1'])->one();
@@ -405,6 +423,24 @@ class TextsController extends Controller
             
             if($model->save()) {
                 $this->redirect('/Xhiddenimstadminurlx/texts/guarantee-text-eight');
+            }
+        }
+
+        return $this->render('/admin/texts', [
+            'model' => $text,
+        ]);
+    }
+
+    public function actionGuaranteeTextNine()
+    {
+        $text = Guarantees::find()->where(['id' => '9'])->one();
+
+        if (Yii::$app->request->post()) {
+            
+            $model = $this->findGuaranteesTextModel(Yii::$app->request->post()['Guarantees']);
+            
+            if($model->save()) {
+                $this->redirect('/Xhiddenimstadminurlx/texts/guarantee-text-nine');
             }
         }
 

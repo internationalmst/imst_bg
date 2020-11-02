@@ -11,26 +11,40 @@ $this->title = 'MST International';
   'lang' => $lang
 ]); ?>
 <?php $this->endContent(); ?>
-<!-- ======= Hero Section ======= -->
-<section id="hero">
 
-  <div class="carousel-inner" role="listbox">
-
-    <!-- Slide 1 -->
-    <div class="carousel-item" style="background-image: url(/images/mainphoto/<?=$main_photo->photo?>.jpg);margin-top:100px;">
-      <div class="container">
+<!-- START SLIDER WITH DATA -->
+<div class="show-for-medium orbit orbit-slider m_t_for_medium_180" role="region" aria-label="Favorite Space Pictures" data-orbit data-orbit data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;">
+  <ul class="orbit-container">
+    <button class="orbit-previous" aria-label="previous"><span class="show-for-sr">Previous Slide</span>&#9664;</button>
+    <button class="orbit-next" aria-label="next"><span class="show-for-sr">Next Slide</span>&#9654;</button>
+    <?php $count=0; foreach($slider as $photo):?>
+    <?php if($count == 0) :?><li class="orbit-slide is-active"><?php else:?><li class="orbit-slide"><?php endif;?>
+      <div id="title" class="container">
       <?php if($lang=='en'):?>
-        <h1><?=$main_photo->title_en?></h1>
-        <p class="subheader"><?=$main_photo->subtitle_en?></p>
+        <h1><?=$texts[4]->title_en?></h1>
+        <h6 class="subheader"><?=$texts[4]->text_en?></h6>
       <?php else:?>
-        <h1><?=$main_photo->title_rus?></h1>
-        <p class="subheader"><?=$main_photo->subtitle_rus?></p>
+        <h1><?=$texts[4]->title_rus?></h1>
+        <h6 class="subheader"><?=$texts[4]->text_rus?></h6>
       <?php endif;?>
       </div>
-    </div>
+      <img class="lazyload" src="/images/slider/<?=$photo->photo?>@1024.jpg">
+    </li>
+    <?php endforeach;?>
+  </ul>
+</div>
 
-  </div>
-</section><!-- End Hero -->
+<div class="show-for-small-only orbit orbit-slider m_t_for_medium_180" role="region" aria-label="Favorite Space Pictures" data-orbit data-orbit data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;">
+  <ul class="orbit-container">
+    <button class="orbit-previous" aria-label="previous"><span class="show-for-sr">Previous Slide</span>&#9664;</button>
+    <button class="orbit-next" aria-label="next"><span class="show-for-sr">Next Slide</span>&#9654;</button>
+    <?php $count=0; foreach($slider as $photo):?>
+    <?php if($count == 0) :?><li class="orbit-slide is-active"><?php else:?><li class="orbit-slide"><?php endif;?>
+      <img class="lazyload" src="/images/slider/<?=$photo->photo?>@600x250.jpg">
+    </li>
+    <?php endforeach;?>
+  </ul>
+</div>
 
 <div class="spacer"></div>
 
@@ -74,11 +88,14 @@ $this->title = 'MST International';
       <div class="column">
         <h5 data-open="modalreveal-6" class="border_primary p_50 button_box text-center cursor-pointer" data-equalizer-watch><?=$guarantees[5]->title_en?></h5>
       </div>
-      <div class="column large-offset-2">
+      <div class="column">
         <h5 data-open="modalreveal-7" class="border_secondary p_50 button_box text-center cursor-pointer" data-equalizer-watch><?=$guarantees[6]->title_en?></h5>
       </div>
       <div class="column">
-        <h5 id="services" data-open="modalreveal-8" class="border_info p_50 button_box text-center cursor-pointer" data-equalizer-watch><?=$guarantees[7]->title_en?></h5>
+        <h5 data-open="modalreveal-8" class="border_info p_50 button_box text-center cursor-pointer" data-equalizer-watch><?=$guarantees[7]->title_en?></h5>
+      </div>
+      <div class="column">
+        <h5 id="services" data-open="modalreveal-8" class="border_green p_50 button_box text-center cursor-pointer" data-equalizer-watch><?=$guarantees[8]->title_en?></h5>
       </div>
     </div>
     <?php else:?>
@@ -101,11 +118,14 @@ $this->title = 'MST International';
       <div class="column">
         <h5 data-open="modalreveal-6" class="border_primary p_50 button_box text-center cursor-pointer" data-equalizer-watch><?=$guarantees[5]->title_rus?></h5>
       </div>
-      <div class="column large-offset-2">
+      <div class="column">
         <h5 data-open="modalreveal-7" class="border_secondary p_50 button_box text-center cursor-pointer" data-equalizer-watch><?=$guarantees[6]->title_rus?></h5>
       </div>
       <div class="column">
-        <h5 id="services" data-open="modalreveal-8" class="border_info p_50 button_box text-center cursor-pointer" data-equalizer-watch><?=$guarantees[7]->title_rus?></h5>
+        <h5 data-open="modalreveal-8" class="border_info p_50 button_box text-center cursor-pointer" data-equalizer-watch><?=$guarantees[7]->title_rus?></h5>
+      </div>
+      <div class="column">
+        <h5 id="services" data-open="modalreveal-8" class="border_green p_50 button_box text-center cursor-pointer" data-equalizer-watch><?=$guarantees[8]->title_rus?></h5>
       </div>
     </div>
     <?php endif;?>
@@ -187,7 +207,7 @@ $this->title = 'MST International';
 <?php endif;?>
 <?php $this->beginContent('@app/views/layouts/footer.php', [
   'lang' => $lang,
-  'main_photo' => $main_photo
+  'texts' => $texts
 ]); ?>
 <?php $this->endContent(); ?>
 
