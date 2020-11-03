@@ -174,8 +174,8 @@ $this->title = 'MST International';
       <h3 class="subscribe__heading">Stay Updated</h3>
       <p class="wp-chimp-description">Subscribe to our newsletter and stay updated for more job aportunities.</p>
       <?php else:?>
-      <h3 class="subscribe__heading">Stay Updated</h3>
-      <p class="wp-chimp-description">Subscribe to our newsletter and stay updated for more job aportunities.</p>
+      <h3 class="subscribe__heading">Новости компании</h3>
+      <p class="wp-chimp-description">Подпишитесь на нашу рассылку и будьте в курсе о новых вакансиях.</p>
       <?php endif;?>
       <div class="wp-chimp-block">
         <?php $form = ActiveForm::begin([

@@ -38,7 +38,11 @@ AppAsset::register($this);
             </ul>
         </div>
         <div class="medium-4 column">
+          <?php if($lang == 'en'):?>
             <h4 class="marketing-site-footer-title">Contact Info</h4>
+          <?php else:?>
+            <h4 class="marketing-site-footer-title">Контакты</h4>
+          <?php endif;?>
             <div class="marketing-site-footer-block">
             <p>yetirules@fakeemail.com</p>
             </div>

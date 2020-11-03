@@ -18,6 +18,7 @@ class Assets extends AssetBundle
       'libs/redactor-250/redactor/alignment.css',
       'css/admin/admin.css',
       'admin/css/app.css',
+      'css/admin/login.css',
       'semantic/semantic.min.css'
     ];
     public $js = [

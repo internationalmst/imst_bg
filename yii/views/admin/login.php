@@ -2,10 +2,12 @@
 use yii\helpers\Url;
 use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
+use app\assets\admin\Assets;
+Assets::register($this);
 
 ?>
 <div class="ui middle aligned center aligned grid">
-  <div class="column">
+  <div class="column" style="top:150px;">
   <h2 class="ui top attached header image"> <img style="height:120px; width:300px; margin-left: auto; margin-right: auto;" class="lazyload" src="/images/imst_logo.png" class="image"> </h2>
     <div class="ui attached segment">
         <?php $form = ActiveForm::begin([
