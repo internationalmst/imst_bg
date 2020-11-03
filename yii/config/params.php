@@ -7,7 +7,7 @@ return [
     'defaultLanguage' => 'en',
     'languages' => [
         ['digit' => 'en', 'full' => 'English', 'iso' => 'en-US'],
-        ['digit' => 'gr', 'full' => 'Greek', 'iso' => 'el-GRC'],
+        ['digit' => 'rus', 'full' => 'Russian', 'iso' => 'ru-RUS'],
     ],
     'langs2' => [
         ['languageDigits' => 'en', 'language' => 'English'],

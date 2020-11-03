@@ -51,14 +51,22 @@ $this->title = 'MST International';
 <div class="row">
   <div class="column large-8 small-12">
     <?php if($lang=='en'):?>
-    <?php foreach($texts as $text):?>
+    <?php $counter = 0; foreach($texts as $text):?>
+      <?php if ($counter > 3):?>
+        <?php break;?>
+      <?php endif;?>
+      <?php $counter = $counter +1;?>
     <div class="row">
       <h2 id="company" class="text-center m_b_20"><?=$text->title_en?></h2>
       <p <?php if($text->id==3):?> id="guarantee"<?php endif;?>><?=$text->text_en?></p>
     </div>
     <?php endforeach;?>
     <?php else:?>
-    <?php foreach($texts as $text):?>
+    <?php $counter = 0; foreach($texts as $text):?>
+      <?php if ($counter > 3):?>
+        <?php break;?>
+      <?php endif;?>
+      <?php $counter = $counter +1;?>
     <div class="row">
       <h2 id="company" class="text-center m_b_20"><?=$text->title_rus?></h2>
       <p <?php if($text->id==3):?> id="guarantee"<?php endif;?>><?=$text->text_rus?></p>
@@ -135,7 +143,7 @@ $this->title = 'MST International';
     <?php if($lang=='en'):?>
       <h2 id="services" class="text-center m_b_20">Services</h2>
     <?php else:?>
-      <h2 id="services" class="text-center m_b_20">Services</h2>
+      <h2 id="services" class="text-center m_b_20">Услуги</h2>
     <?php endif;?>
     </div>
     <div class="row small-up-2 large-up-2" data-equalizer>

@@ -30,10 +30,10 @@ AppAsset::register($this);
                 <li><a href="<?=Url::base(true)?>/en#guarantee">We Guarantee</a></li>
                 <li><a href="<?=Url::base(true)?>/en/work-with-us">Work with Us</a></li>
             <?php else:?>
-                <li><a href="<?=Url::base(true)?>/rus">Home</a></li>
-                <li><a href="<?=Url::base(true)?>/rus#services">Services</a></li>
-                <li><a href="<?=Url::base(true)?>/rus#guarantee">We Guarantee</a></li>
-                <li><a href="<?=Url::base(true)?>/rus/work-with-us">Work with Us</a></li>
+                <li><a href="<?=Url::base(true)?>/rus">Главная</a></li>
+                <li><a href="<?=Url::base(true)?>/rus#services">Услуги</a></li>
+                <li><a href="<?=Url::base(true)?>/rus#guarantee">Гарантия качества</a></li>
+                <li><a href="<?=Url::base(true)?>/rus/work-with-us">Работа с нами</a></li>
             <?php endif;?>
             </ul>
         </div>
