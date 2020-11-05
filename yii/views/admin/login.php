@@ -8,7 +8,7 @@ Assets::register($this);
 ?>
 <div class="ui middle aligned center aligned grid">
   <div class="column" style="top:150px;">
-  <h2 class="ui top attached header image"> <img style="height:120px; width:300px; margin-left: auto; margin-right: auto;" class="lazyload" src="/images/imst_logo.png" class="image"> </h2>
+  <h2 class="ui top attached header image"> <img style="width:200px; margin-left: auto; margin-right: auto;" class="lazyload" src="/images/LOGO_Team_Name.png" class="image"> </h2>
     <div class="ui attached segment">
         <?php $form = ActiveForm::begin([
         'errorSummaryCssClass' => 'alert alert-danger',

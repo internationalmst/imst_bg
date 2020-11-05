@@ -2,9 +2,9 @@
 
 return [
     'class' => 'yii\db\Connection',
-    'dsn' => YII_ENV == 'dev' ? 'mysql:host=localhost;dbname=imst_bg' : 'mysql:host=localhost;dbname=imst_bg_db',
-    'username' => YII_ENV == 'dev' ? 'root' : 'imst_bg_user',
-    'password' => YII_ENV == 'dev' ? 'root' : '1M$t2018!!',
+    'dsn' => YII_ENV == 'dev' ? 'mysql:host=localhost;dbname=imst_bg' : 'mysql:host=localhost;dbname=teamltde_db',
+    'username' => YII_ENV == 'dev' ? 'root' : 'teamltde_db_user',
+    'password' => YII_ENV == 'dev' ? 'root' : 'TuJY*?!Vd;a!',
     'charset' => 'utf8',
 
     // Schema cache options (for production environment)
