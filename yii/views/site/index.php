@@ -155,7 +155,7 @@ $this->title = 'Team-ltd | B2B localization services';
       <h2 id="services" class="text-center m_b_20">Услуги</h2>
     <?php endif;?>
     </div>
-    <div class="row small-up-2 large-up-2" data-equalizer>
+    <div class="row small-up-1 large-up-2" data-equalizer>
       <?php foreach($services as $service):?>
         <div class="column">
           <div class="border_wrapper" data-equalizer-watch>
