@@ -8,7 +8,7 @@ AppAsset::register($this);
     <div id="topbar" class="d-none d-lg-flex align-items-center ">
     <div class="container d-flex align-items-center">
       <div class="d-flex align-items-center">
-        <i class="icofont-envelope"></i>Email: imst@imst.gr
+        <i class="icofont-envelope"></i>Email: info@team-ltd.eu
       </div>
     </div>
   </div>

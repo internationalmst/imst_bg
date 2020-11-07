@@ -4,7 +4,7 @@ use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 /* @var $this yii\web\View */
 
-$this->title = 'MST International';
+$this->title = 'Team-ltd | B2B localization services';
 ?>
 
 <?php $this->beginContent('@app/views/layouts/menu.php', [
@@ -13,7 +13,7 @@ $this->title = 'MST International';
 <?php $this->endContent(); ?>
 
 <!-- START SLIDER WITH DATA -->
-<div class="show-for-medium orbit orbit-slider m_t_for_medium_180" role="region" aria-label="Favorite Space Pictures" data-orbit data-orbit data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;">
+<div class="show-for-medium orbit orbit-slider m_t_for_medium_180" role="region" aria-label="Favorite Space Pictures" data-orbit data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;">
   <ul class="orbit-container">
     <button class="orbit-previous" aria-label="previous"><span class="show-for-sr">Previous Slide</span>&#9664;</button>
     <button class="orbit-next" aria-label="next"><span class="show-for-sr">Next Slide</span>&#9654;</button>
@@ -34,7 +34,7 @@ $this->title = 'MST International';
   </ul>
 </div>
 
-<div class="show-for-small-only orbit orbit-slider m_t_for_medium_180" role="region" aria-label="Favorite Space Pictures" data-orbit data-orbit data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;">
+<div class="show-for-small-only orbit orbit-slider m_t_for_medium_180" role="region" aria-label="Favorite Space Pictures" data-orbit data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;">
   <ul class="orbit-container">
     <button class="orbit-previous" aria-label="previous"><span class="show-for-sr">Previous Slide</span>&#9664;</button>
     <button class="orbit-next" aria-label="next"><span class="show-for-sr">Next Slide</span>&#9654;</button>
@@ -164,7 +164,7 @@ $this->title = 'MST International';
     </div>
   </div>
   <div class="column large-offset-1 large-3 small-12">
-    <img src="images/savas_adv1.jpg" alt="imst_basic">
+    <img src="images/LOGO_Team.png" alt="imst_basic">
     <div class="spacer"></div>
     <img src="images/green-policy.png" alt="imst_basic">
     <div class="spacer"></div>

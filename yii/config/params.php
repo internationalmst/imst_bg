@@ -1,9 +1,10 @@
 <?php
 
 return [
-    'adminEmail' => 'admin@example.com',
-    'senderEmail' => 'noreply@example.com',
-    'senderName' => 'Example.com mailer',
+    'adminEmail' => 'info@team-ltd.eu',
+    'senderEmail' => 'info@team-ltd.eu',
+    'senderName' => 'team-ltd',
+    'fromEmail' => 'cv@team-ltd.eu',
     'defaultLanguage' => 'en',
     'languages' => [
         ['digit' => 'en', 'full' => 'English', 'iso' => 'en-US'],

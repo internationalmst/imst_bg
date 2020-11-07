@@ -44,7 +44,7 @@ AppAsset::register($this);
             <h4 class="marketing-site-footer-title">Контакты</h4>
           <?php endif;?>
             <div class="marketing-site-footer-block">
-            <p>yetirules@fakeemail.com</p>
+            <p>info@team-ltd.eu</p>
             </div>
         </div>
     </div>
