@@ -9,9 +9,9 @@ AppAsset::register($this);
 <footer class="">
   <div class="marketing-site-footer">
     <div class="row medium-unstack">
-        <div class="column medium-4">
+        <div class="column medium-4 small-12 text-center">
             <?php if($lang=='en'):?>
-                <h4 class="marketing-site-footer-name"><?=$texts[4]->title_en?></h4>
+                <h4 class="marketing-site-footer-name text"><?=$texts[4]->title_en?></h4>
                 <p><?=$texts[4]->text_rus?></p>
                 <ul class="menu marketing-site-footer-menu-social simple">
                 </ul>
@@ -22,7 +22,7 @@ AppAsset::register($this);
                 </ul>
             <?php endif;?>
         </div>
-        <div class="medium-4 column">
+        <div class="medium-4 small-12 column">
             <ul class="vertical menu footer">
             <?php if($lang == 'en'):?>
                 <li><a href="<?=Url::base(true)?>/en">Home</a></li>
@@ -37,14 +37,14 @@ AppAsset::register($this);
             <?php endif;?>
             </ul>
         </div>
-        <div class="medium-4 column">
+        <div class="medium-4 small-12 column text-center">
           <?php if($lang == 'en'):?>
             <h4 class="marketing-site-footer-title">Contact Info</h4>
           <?php else:?>
             <h4 class="marketing-site-footer-title">Контакты</h4>
           <?php endif;?>
             <div class="marketing-site-footer-block">
-            <p>info@team-ltd.eu</p>
+            <a href="mailto:info@team-ltd.eu?subject='Contact Team ldt | Website'">info@team-ltd.eu</a>
             </div>
         </div>
     </div>
