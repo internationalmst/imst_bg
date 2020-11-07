@@ -4,7 +4,7 @@ use yii\widgets\ActiveForm;
 
 /* @var $this yii\web\View */
 
-$this->title = 'MST International';
+$this->title = 'Team-ltd | B2B localization services';
 ?>
 
 <?php $this->beginContent('@app/views/layouts/menu.php', [
@@ -40,6 +40,15 @@ $this->title = 'MST International';
     <button class="orbit-next" aria-label="next"><span class="show-for-sr">Next Slide</span>&#9654;</button>
     <?php $count=0; foreach($slider as $photo):?>
     <?php if($count == 0) :?><li class="orbit-slide is-active"><?php else:?><li class="orbit-slide"><?php endif;?>
+      <div id="title" class="container">
+      <?php if($lang=='en'):?>
+        <h1><?=$texts[4]->title_en?></h1>
+        <h6 class="subheader"><?=$texts[4]->text_en?></h6>
+      <?php else:?>
+        <h1><?=$texts[4]->title_rus?></h1>
+        <h6 class="subheader"><?=$texts[4]->text_rus?></h6>
+      <?php endif;?>
+      </div>
       <img class="lazyload" src="/images/slider/<?=$photo->photo?>@600x250.jpg">
     </li>
     <?php endforeach;?>
