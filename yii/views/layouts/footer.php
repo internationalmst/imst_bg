@@ -52,7 +52,7 @@ AppAsset::register($this);
   <div class="marketing-site-footer-bottom">
     <div class="row large-unstack align-middle">
       <div class="column">
-        <p>&copy; 2020 IMST All rights are reserved</p>
+        <p>&copy; 2020 Team Ltd All rights are reserved</p>
       </div>
     </div>
   </div>
