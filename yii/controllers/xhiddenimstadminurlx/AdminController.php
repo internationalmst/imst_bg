@@ -49,12 +49,19 @@ class AdminController extends Controller
         ];
     }
 
+    public function beforeAction($action)
+    {
+        if (Yii::$app->user->identity != NULL) {
+            $this->layout = 'content';
+            return $this->redirect('/Xhiddenimstadminurlx/slider/index');
+        }
+
+        return $action;        
+    }
+
     public function actionLogin()
     {
         $this->layout = 'admin';
-        if (!Yii::$app->user->isGuest) {
-            $this->redirect(Yii::$app->user->returnUrl);
-        }
         $model = new LoginForm();
         if ($model->load(Yii::$app->request->post()) && $model->login()) {
             $this->redirect('slider/index');
