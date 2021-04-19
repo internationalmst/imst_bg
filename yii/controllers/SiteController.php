@@ -107,11 +107,11 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
+        $main_photo = MainPhoto::find()->one();
         $texts = Texts::find()->all();
         $guarantees = Guarantees::find()->all();
         $services = Services::find()->all();
         $slider = Slider::find()->orderBy(['position' => SORT_ASC])->all();
-
         $newsletter = new NewsletterForm();
 
         if ($newsletter->load(Yii::$app->request->post()) && $newsletter->submit()) {
@@ -121,6 +121,7 @@ class SiteController extends Controller
         }
 
         return $this->render('index', [
+            'main_photo' => $main_photo,
             'texts' => $texts,
             'guarantees' => $guarantees,
             'services' => $services,
@@ -144,6 +145,7 @@ class SiteController extends Controller
         }
 
         return $this->render('work', [
+            'main_photo' => $main_photo,
             'texts' => $texts,
             'lang' => $this->view->params['language'],
             'slider' => $slider,

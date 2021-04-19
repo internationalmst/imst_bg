@@ -21,11 +21,11 @@ $this->title = 'Team-ltd | B2B localization services';
     <?php if($count == 0) :?><li class="orbit-slide is-active"><?php else:?><li class="orbit-slide"><?php endif;?>
       <div id="title" class="container">
       <?php if($lang=='en'):?>
-        <h1><?=$texts[4]->title_en?></h1>
-        <h6 class="subheader"><?=$texts[4]->text_en?></h6>
+        <h1><?=$main_photo->title_en?></h1>
+        <h6 class="subheader"><?=$main_photo->subtitle_en?></h6>
       <?php else:?>
-        <h1><?=$texts[4]->title_rus?></h1>
-        <h6 class="subheader"><?=$texts[4]->text_rus?></h6>
+        <h1><?=$main_photo->title_rus?></h1>
+        <h6 class="subheader"><?=$main_photo->subtitle_rus?></h6>
       <?php endif;?>
       </div>
       <img class="lazyload" src="/images/slider/<?=$photo->photo?>@1024.jpg">
@@ -224,6 +224,7 @@ $this->title = 'Team-ltd | B2B localization services';
 <?php endif;?>
 <?php $this->beginContent('@app/views/layouts/footer.php', [
   'lang' => $lang,
-  'texts' => $texts
+  'texts' => $texts,
+  'main_photo' => $main_photo
 ]); ?>
 <?php $this->endContent(); ?>

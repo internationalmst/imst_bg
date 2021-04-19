@@ -11,13 +11,13 @@ AppAsset::register($this);
     <div class="row medium-unstack">
         <div class="column medium-4 small-12 text-center">
             <?php if($lang=='en'):?>
-                <h4 class="marketing-site-footer-name text"><?=$texts[4]->title_en?></h4>
-                <p><?=$texts[4]->text_rus?></p>
+                <h4 class="marketing-site-footer-name text"><?=$main_photo->title_en?></h4>
+                <p><?=$main_photo->subtitle_en?></p>
                 <ul class="menu marketing-site-footer-menu-social simple">
                 </ul>
             <?php else:?>
-                <h4 class="marketing-site-footer-name"><?=$texts[4]->title_rus?></h4>
-                <p><?=$texts[4]->text_rus?></p>
+                <h4 class="marketing-site-footer-name"><?=$main_photo->title_rus?></h4>
+                <p><?=$main_photo->subtitle_rus?></p>
                 <ul class="menu marketing-site-footer-menu-social simple">
                 </ul>
             <?php endif;?>
