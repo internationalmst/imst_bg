@@ -84,7 +84,7 @@ $this->title = 'Team-ltd | B2B localization services';
     <div class="spacer"></div>
 
     <?php if($lang=='en'):?>
-    <div class="row small-up-2 large-up-3" data-equalizer>
+    <div class="row small-up-1 medium-up-2 large-up-3" data-equalizer>
       <div class="column">
         <h5 data-open="modalreveal-1" class="border_blue p_50 button_box text-center cursor-pointer" data-equalizer-watch><?=$guarantees[0]->title_en?></h5>
       </div>
