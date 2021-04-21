@@ -86,13 +86,13 @@ $this->title = 'Team-ltd | B2B localization services';
     <?php if($lang=='en'):?>
     <div class="row small-up-1 medium-up-2 large-up-3" data-equalizer>
       <div class="column">
-        <h5 data-open="modalreveal-1" class="border_blue p_50 button_box text-center cursor-pointer" data-equalizer-watch><?=$guarantees[0]->title_en?></h5>
+        <h5 data-open="modalreveal-1" class="border_blue p_10 p_t_50 button_box text-center cursor-pointer" data-equalizer-watch><?=$guarantees[0]->title_en?></h5>
       </div>
       <div class="column">
-        <h5 data-open="modalreveal-2" class="border_green p_50 button_box text-center cursor-pointer" data-equalizer-watch><?=$guarantees[1]->title_en?></h5>
+        <h5 data-open="modalreveal-2" class="border_green p_10 p_t_50 button_box text-center cursor-pointer" data-equalizer-watch><?=$guarantees[1]->title_en?></h5>
       </div>
       <div class="column">
-        <h5 data-open="modalreveal-3" class="border_red p_50 button_box text-center cursor-pointer" data-equalizer-watch><?=$guarantees[2]->title_en?></h5>
+        <h5 data-open="modalreveal-3" class="border_red p_10 p_t_50 button_box text-center cursor-pointer" data-equalizer-watch><?=$guarantees[2]->title_en?></h5>
       </div>
       <div class="column">
         <h5 data-open="modalreveal-4" class="border_warning p_10 p_t_50 button_box text-center cursor-pointer" data-equalizer-watch><?=$guarantees[3]->title_en?></h5>
@@ -114,33 +114,33 @@ $this->title = 'Team-ltd | B2B localization services';
       </div>
     </div>
     <?php else:?>
-    <div class="row small-up-2 large-up-3" data-equalizer>
+    <div class="row small-up-1 medium-up-2 large-up-3" data-equalizer>
       <div class="column">
-        <h5 data-open="modalreveal-1" class="border_blue p_50 button_box text-center cursor-pointer" data-equalizer-watch><?=$guarantees[0]->title_rus?></h5>
+        <h5 data-open="modalreveal-1" class="border_blue p_10 p_t_50 button_box text-center cursor-pointer" data-equalizer-watch><?=$guarantees[0]->title_rus?></h5>
       </div>
       <div class="column">
-        <h5 data-open="modalreveal-2" class="border_green p_50 button_box text-center cursor-pointer" data-equalizer-watch><?=$guarantees[1]->title_rus?></h5>
+        <h5 data-open="modalreveal-2" class="border_green p_10 p_t_50 button_box text-center cursor-pointer" data-equalizer-watch><?=$guarantees[1]->title_rus?></h5>
       </div>
       <div class="column">
-        <h5 data-open="modalreveal-3" class="border_red p_50 button_box text-center cursor-pointer" data-equalizer-watch><?=$guarantees[2]->title_rus?></h5>
+        <h5 data-open="modalreveal-3" class="border_red p_10 p_t_50 button_box text-center cursor-pointer" data-equalizer-watch><?=$guarantees[2]->title_rus?></h5>
       </div>
       <div class="column">
-        <h5 data-open="modalreveal-4" class="border_warning p_50 button_box text-center cursor-pointer" data-equalizer-watch><?=$guarantees[3]->title_rus?></h5>
+        <h5 data-open="modalreveal-4" class="border_warning p_10 p_t_50 button_box text-center cursor-pointer" data-equalizer-watch><?=$guarantees[3]->title_rus?></h5>
       </div>
       <div class="column">
-        <h5 data-open="modalreveal-5" class="border_danger p_50 button_box text-center cursor-pointer" data-equalizer-watch><?=$guarantees[4]->title_rus?></h5>
+        <h5 data-open="modalreveal-5" class="border_danger p_10 p_t_50 button_box text-center cursor-pointer" data-equalizer-watch><?=$guarantees[4]->title_rus?></h5>
       </div>
       <div class="column">
-        <h5 data-open="modalreveal-6" class="border_primary p_50 button_box text-center cursor-pointer" data-equalizer-watch><?=$guarantees[5]->title_rus?></h5>
+        <h5 data-open="modalreveal-6" class="border_primary p_10 p_t_50 button_box text-center cursor-pointer" data-equalizer-watch><?=$guarantees[5]->title_rus?></h5>
       </div>
       <div class="column">
-        <h5 data-open="modalreveal-7" class="border_secondary p_50 button_box text-center cursor-pointer" data-equalizer-watch><?=$guarantees[6]->title_rus?></h5>
+        <h5 data-open="modalreveal-7" class="border_secondary p_10 p_t_50 button_box text-center cursor-pointer" data-equalizer-watch><?=$guarantees[6]->title_rus?></h5>
       </div>
       <div class="column">
-        <h5 data-open="modalreveal-8" class="border_info p_50 button_box text-center cursor-pointer" data-equalizer-watch><?=$guarantees[7]->title_rus?></h5>
+        <h5 data-open="modalreveal-8" class="border_info p_10 p_t_50 button_box text-center cursor-pointer" data-equalizer-watch><?=$guarantees[7]->title_rus?></h5>
       </div>
       <div class="column">
-        <h5 id="services" data-open="modalreveal-8" class="border_green p_50 button_box text-center cursor-pointer" data-equalizer-watch><?=$guarantees[8]->title_rus?></h5>
+        <h5 id="services" data-open="modalreveal-8" class="border_green p_10 p_t_50 button_box text-center cursor-pointer" data-equalizer-watch><?=$guarantees[8]->title_rus?></h5>
       </div>
     </div>
     <?php endif;?>
