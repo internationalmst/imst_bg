@@ -86,6 +86,7 @@ class SiteController extends Controller
         }
         $this->view->params['language'] = $lang->code;
         $this->view->params['changeLanguages'] = ChangeLanguage::createMirrors($langs);
+        print_r($this->view->params['changeLanguages']);die;
         \Yii::$app->language = $lang->iso_code;
 
         $this->layout = '@app/views/layouts/main.php';

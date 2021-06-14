@@ -96,6 +96,7 @@ $config = [
                 ['pattern' => 'Xhiddenimstadminurlx/texts/guarantee-text-five', 'route' => '/xhiddenimstadminurlx/texts/guarantee-text-five', 'normalizer' => ['collapseSlashes' => false]],
                 ['pattern' => 'Xhiddenimstadminurlx/texts/guarantee-text-six', 'route' => '/xhiddenimstadminurlx/texts/guarantee-text-six', 'normalizer' => ['collapseSlashes' => false]],
                 ['pattern' => 'Xhiddenimstadminurlx/texts/guarantee-text-seven', 'route' => '/xhiddenimstadminurlx/texts/guarantee-text-seven', 'normalizer' => ['collapseSlashes' => false]],
+                ['pattern' => 'Xhiddenimstadminurlx/texts/guarantee-text-eight', 'route' => '/xhiddenimstadminurlx/texts/guarantee-text-eight', 'normalizer' => ['collapseSlashes' => false]],
                 ['pattern' => 'Xhiddenimstadminurlx/texts/guarantee-text-nine', 'route' => '/xhiddenimstadminurlx/texts/guarantee-text-nine', 'normalizer' => ['collapseSlashes' => false]],
 
                 ['pattern' => 'Xhiddenimstadminurlx/newsletter/index', 'route' => '/xhiddenimstadminurlx/newsletter/index', 'normalizer' => ['collapseSlashes' => false]],

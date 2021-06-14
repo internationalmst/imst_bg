@@ -110,7 +110,7 @@ $this->title = 'Team-ltd | B2B localization services';
         <h5 data-open="modalreveal-8" class="border_info p_10 p_t_b_50 f_s_p_50  button_box text-center cursor-pointer" data-equalizer-watch><?=$guarantees[7]->title_en?></h5>
       </div>
       <div class="column">
-        <h5 id="services" data-open="modalreveal-8" class="border_green p_10 p_t_b_50 f_s_p_50  button_box text-center cursor-pointer" data-equalizer-watch><?=$guarantees[8]->title_en?></h5>
+        <h5 id="services" data-open="modalreveal-9" class="border_green p_10 p_t_b_50 f_s_p_50  button_box text-center cursor-pointer" data-equalizer-watch><?=$guarantees[8]->title_en?></h5>
       </div>
     </div>
     <?php else:?>
@@ -145,30 +145,6 @@ $this->title = 'Team-ltd | B2B localization services';
     </div>
     <?php endif;?>
     <div class="spacer"></div>
-
-    <div class="row">
-    <?php if($lang=='en'):?>
-      <h2 id="services" class="text-center m_b_20">Services</h2>
-    <?php else:?>
-      <h2 id="services" class="text-center m_b_20">Услуги</h2>
-    <?php endif;?>
-    </div>
-    <div class="row small-up-1 large-up-2" data-equalizer>
-      <?php foreach($services as $service):?>
-        <div class="column">
-          <div class="border_wrapper" data-equalizer-watch>
-            <?php if($lang=='en'):?>
-            <h5><?=$service->title_en?></h5>
-            <p><?=$service->text_en?></p>
-            <?php else:?>
-            <h5><?=$service->title_rus?></h5>
-            <p><?=$service->text_rus?></p>
-            <?php endif;?>
-          </div>
-          <div class="small_spacer"></div>
-        </div>
-      <?php endforeach;?>
-    </div>
   </div>
   <div class="column large-offset-1 large-3 small-12">
     <img src="images/LOGO_Team.png" alt="imst_basic">
@@ -201,6 +177,48 @@ $this->title = 'Team-ltd | B2B localization services';
         <?php ActiveForm::end(); ?>
       </div>
     </div>
+  </div>
+</div>
+
+<div class="row">
+<?php if($lang=='en'):?>
+  <h2 id="services" class="text-center m_b_20">Services</h2>
+<?php else:?>
+  <h2 id="services" class="text-center m_b_20">Услуги</h2>
+<?php endif;?>
+</div>
+<div class="row small-up-1 large-up-2" >
+  <?php $n=0 ?>
+  <?php foreach($services as $service): ;?>
+  <?php if($n<5):?>
+    <div class="column">
+      <div class="border_wrapper">
+        <?php if($lang=='en'):?>
+        <h5><?=$service->title_en?></h5>
+        <p><?=$service->text_en?></p>
+        <?php else:?>
+        <h5><?=$service->title_rus?></h5>
+        <p><?=$service->text_rus?></p>
+        <?php endif;?>
+      </div>
+      <div class="small_spacer"></div>
+    </div>
+    <?php endif;?>
+  <?php $n=$n+1; ?>
+  <?php endforeach;?>
+</div>
+<div class="row small-up-1 large-up-1" >
+  <div class="column">
+    <div class="border_wrapper">
+      <?php if($lang=='en'):?>
+      <h5><?=$services[5]->title_en?></h5>
+      <p><?=$services[5]->text_en?></p>
+      <?php else:?>
+      <h5><?=$services[5]->title_rus?></h5>
+      <p><?=$services[5]->text_rus?></p>
+      <?php endif;?>
+    </div>
+    <div class="small_spacer"></div>
   </div>
 </div>
 <?php if($lang=='en'):?>
