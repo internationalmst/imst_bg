@@ -86,18 +86,10 @@ class SiteController extends Controller
         }
         $this->view->params['language'] = $lang->code;
         $this->view->params['changeLanguages'] = ChangeLanguage::createMirrors($langs);
-
-        if ($this->view->params['changeLanguages'][1]['url'] == 'en') {
-            $this->view->params['changeLanguages'][1]['url'][-1]='u';
-            $this->view->params['changeLanguages'][1]['url'][-2]='r';
-            $this->view->params['changeLanguages'][1]['url'] = $this->view->params['changeLanguages'][1]['url'].'s';            
-        }
-        if ($this->view->params['changeLanguages'][0]['url'] == 'rus') {
-            $this->view->params['changeLanguages'][0]['url'][-2]='n';
-            $this->view->params['changeLanguages'][0]['url'][-3]='e';
-            $this->view->params['changeLanguages'][0]['url'] = $this->view->params['changeLanguages'][1]['url'] - $this->view->params['changeLanguages'][1]['url'][-1];
-        }
-        print_r($this->view->params['changeLanguages']);die;
+        
+        $this->view->params['changeLanguages'][0]['url'] = "http://dev.team-ltd.eu/en";
+        $this->view->params['changeLanguages'][1]['url'] = "http://dev.team-ltd.eu/rus";
+        
         \Yii::$app->language = $lang->iso_code;
 
         $this->layout = '@app/views/layouts/main.php';
