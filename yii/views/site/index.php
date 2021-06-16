@@ -140,7 +140,7 @@ $this->title = 'Team-ltd | B2B localization services';
         <h5 data-open="modalreveal-8" class="border_info p_10 p_t_b_50 f_s_p_50  button_box text-center cursor-pointer" data-equalizer-watch><?=$guarantees[7]->title_rus?></h5>
       </div>
       <div class="column">
-        <h5 id="services" data-open="modalreveal-8" class="border_green p_10 p_t_b_50 f_s_p_50  button_box text-center cursor-pointer" data-equalizer-watch><?=$guarantees[8]->title_rus?></h5>
+        <h5 id="services" data-open="modalreveal-9" class="border_green p_10 p_t_b_50 f_s_p_50  button_box text-center cursor-pointer" data-equalizer-watch><?=$guarantees[8]->title_rus?></h5>
       </div>
     </div>
     <?php endif;?>
